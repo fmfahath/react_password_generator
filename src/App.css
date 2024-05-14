@@ -141,3 +141,9 @@ body {
 .error {
     color: red !important;
 }
+
+.success {
+    color: #06b471;
+    text-align: center;
+    font-size: 14px;
+}

@@ -10,6 +10,7 @@ function App() {
   const [symbols, setSymbols] = useState(false);
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState(false);
+  const [copyMessage, setCopyMessage] = useState(false)
 
   const generatePassword = () => {
 
@@ -33,9 +34,18 @@ function App() {
 
     setPassword(generatedPassword);
     setErrorMessage(false);
-
-
   }
+
+  const copyPassword = () => {
+    if (password) {
+      navigator.clipboard.writeText(password);
+      setCopyMessage(true);
+      setTimeout(() => {
+        setCopyMessage(false)
+      }, 1000);
+    }
+  }
+
 
   return (
     <>
@@ -71,7 +81,10 @@ function App() {
         </div>
         <div className="password">
           <input type="text" readOnly value={password} />
-          <button>Copy</button>
+          <button onClick={copyPassword}>Copy</button>
+        </div>
+        <div className="copy-alert">
+          <p className='success'>{copyMessage && "Password Copied!"}</p>
         </div>
 
       </div>
