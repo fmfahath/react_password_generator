@@ -142,8 +142,17 @@ body {
     color: red !important;
 }
 
+.input input.error {
+    color: black !important;
+    border-color: red !important;
+}
+
+.checkList.error div label {
+    color: red !important;
+}
+
 .success {
-    color: #06b471;
+    color: #06b471 !important;
     text-align: center;
     font-size: 14px;
 }
