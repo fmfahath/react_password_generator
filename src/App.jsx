@@ -9,9 +9,32 @@ function App() {
   const [numbers, setNumbers] = useState(false);
   const [symbols, setSymbols] = useState(false);
   const [password, setPassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState(false);
 
   const generatePassword = () => {
-    console.log(length, uppercase, lowercase, numbers, symbols);
+
+    let charSet = "";
+    let generatedPassword = "";
+
+    if (!length.length) {
+      setErrorMessage(true);
+    }
+
+    if (uppercase) charSet += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    if (lowercase) charSet += "abcdefghijklmnopqrstuvwxyz";
+    if (numbers) charSet += "0123456789";
+    if (symbols) charSet += "`~!@#$%^&*()_+`";
+
+    // console.log(charSet); 
+    for (let i = 0; i < length; i++) {
+      let randomIndex = Math.floor(Math.random() * charSet.length);
+      generatedPassword += charSet[randomIndex];
+    }
+
+    setPassword(generatedPassword);
+    setErrorMessage(false);
+
+
   }
 
   return (

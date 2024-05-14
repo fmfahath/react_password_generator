@@ -137,3 +137,7 @@ body {
 .password button:hover {
     background-color: #06b471;
 }
+
+.error {
+    color: red !important;
+}
