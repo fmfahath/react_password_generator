@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #fff;
+    width: 500px;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #0b4ca1;
+    margin-bottom: 30px;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.input {
+    margin: 10px 0;
+}
+
+.input label {
+    display: block;
+    margin-bottom: 5px;
+    color: #0b4ca1;
+    font-weight: 600;
+}
+
+.input input {
+    width: 100%;
+    margin: auto;
+    padding: 10px 15px;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid #0b4ca1;
+}
+
+.checkList {
+    margin-left: 10px;
+}
+
+.chekList-item {
+    margin-bottom: 10px;
+    color: #073d85;
+}
+
+.chekList-item label {
+    margin-left: 10px;
+}
+
+.generate-btn {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.generate-btn button {
+    display: block;
+    width: 50%;
+    padding: 15px 25px;
+    background-color: #083c80;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.generate-btn button:hover {
+    background-color: #094ca3;
+}
+
+.password {
+    margin: 30px 0 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+}
+
+.password input {
+    flex: 1;
+    padding: 10px 15px;
+    outline: none;
+    border-radius: 10px;
+    border: 2px solid #0b4ca1;
+    background: transparent;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+
+.password button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+    background-color: #083c80;
+}
+
+.password button:hover {
+    background-color: #084697;
+}
