@@ -141,7 +141,7 @@ body {
 }
 
 .error {
-    color: red !important;
+    color: rgb(248, 33, 33) !important;
 }
 
 .input input.error {
