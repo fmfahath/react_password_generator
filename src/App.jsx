@@ -97,7 +97,7 @@ function App() {
           <h2>Password Generator</h2>
         </div>
         <div className="input">
-          <label htmlFor="input" className={`${errorState.inputError ? "error" : ""}`}>Password Length: </label>
+          <label htmlFor="input" className={`${errorState.inputError ? "error" : ""}`}>Enter Password Length </label>
           <input type="number" id='input' className={`${errorState.inputError ? "error" : ""}`} onChange={handleInput} name='input' value={length} />
         </div>
         <div className={`checkList ${errorState.checkListError ? "error" : ""}`}>
@@ -126,7 +126,8 @@ function App() {
           <button onClick={copyPassword}>Copy</button>
         </div>
         <div className="copy-alert">
-          <p className='success'>{copyMessage && "Password Copied!"}</p>
+          {/* <p className='success'>Password Copied</p> */}
+          <p className='success'>{copyMessage && 'Password Copied'}</p>
         </div>
 
       </div>

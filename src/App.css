@@ -23,6 +23,7 @@ body {
     padding: 30px 50px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
 }
 
 .logo {
@@ -35,8 +36,8 @@ body {
 }
 
 .logo img {
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
     margin-bottom: 10px;
     border-radius: 50%;
     padding: 10px;
@@ -52,11 +53,11 @@ body {
     margin-bottom: 5px;
     color: #0b4ca1;
     font-weight: 600;
+    font-size: 15px;
 }
 
 .input input {
     width: 100%;
-    margin: auto;
     padding: 10px 15px;
     outline: none;
     border-radius: 10px;
@@ -74,6 +75,7 @@ body {
 }
 
 .chekList-item label {
+    font-size: 14px;
     margin-left: 10px;
 }
 
@@ -151,8 +153,84 @@ body {
     color: red !important;
 }
 
+.copy-alert {
+    display: block;
+    height: 20px;
+}
+
 .success {
-    color: #06b471 !important;
+    color: #09a368 !important;
     text-align: center;
     font-size: 14px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        width: 250px;
+        padding: 30px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .logo h2 {
+        font-size: 18px;
+    }
+
+    .input label {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .input input {
+        padding: 8px 10px;
+        text-align: center;
+    }
+
+    .chekList-item label {
+        font-size: 12px;
+    }
+
+    .generate-btn {
+        margin: 30px 0 5px;
+    }
+
+    .generate-btn button {
+        width: 70%;
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    .password {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .password input {
+        text-align: center;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+
+    .password button {
+        width: 40%;
+        margin: auto;
+        padding: 5px 8px;
+        font-size: 12px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .success {
+        font-size: 12px;
+    }
+
 }
